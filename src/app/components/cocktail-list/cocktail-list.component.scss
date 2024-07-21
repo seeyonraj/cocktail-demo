@@ -1,0 +1,50 @@
+.cocktail-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.cocktail-list-item {
+    background-color: #FDFEFE;
+    margin: 10px 10px;
+    border: #1f1717 1px solid;
+    border-radius: 10px;
+    display: flex;
+    width: 330px;
+}
+
+.cocktail-product-image {
+    border-radius: 10px;
+    width: 150px;
+    height: 115px;
+    float: left;
+}
+.cocktail-product-image-desc {
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+.cocktail-product-desc {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.cocktail-product-name {
+    font-size: 16px;
+    color: #28282B;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+.style-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.style-blue {
+    color: blue;
+}
+
+.style-green {
+    color: green;
+}

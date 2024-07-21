@@ -1,0 +1,41 @@
+.cocktail-list-container {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 5vh;
+    width: 70vw;
+}
+
+.cocktail-product-image {
+    width: 300px;
+    height: 250px;
+    margin: auto;
+}
+
+.cocktail-product-name {
+    font-size: 20px;
+    color: black;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+.home-btn {
+    padding: 5px 20px;;
+    color: black;
+    border-color: black;
+    border-radius: 2px;
+    background-color: blue;
+}
+
+.style-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.style-blue {
+    color: blue;
+}
+
+.style-green {
+    color: green;
+}

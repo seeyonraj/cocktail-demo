@@ -1,0 +1,18 @@
+<button class="home-btn" (click)="goHome()">Home</button>
+<div class="cocktail-list-item">
+    <div class="cocktail-container">
+        <div class="cocktail-product-image">
+            <img [src]="cocktailDetail.imageUrl">
+        </div>
+        <div class="cocktail-product-name">{{cocktailDetail.name}}
+            <span class="icon-star" [ngClass]="{'active': cocktailDetail.isFavorite }"
+                (click)="onClickFavourite(cocktailDetail)"></span>
+        </div>
+        <div class="style-bold"><span>Type : </span><span
+                [ngClass]="cocktailDetail.isAlcoholic ? 'style-blue' : 'style-green'">{{cocktailDetail.isAlcoholic
+                ?
+                'Alcoholic' : 'Non alcoholic'}}</span></div>
+        <div><span class="style-bold">Ingredients :</span> {{cocktailDetail.ingredients}}</div>
+        <div> <span class="style-bold">Instructions :</span> {{cocktailDetail.instructions}}</div>
+    </div>
+</div>
