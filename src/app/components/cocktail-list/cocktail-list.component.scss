@@ -10,18 +10,24 @@
     border: #1f1717 1px solid;
     border-radius: 10px;
     display: flex;
-    width: 330px;
+    width: 370px;
+    height: 150px;
 }
 
 .cocktail-product-image {
     border-radius: 10px;
     width: 150px;
-    height: 115px;
+    height: 150px;
     float: left;
 }
 .cocktail-product-image-desc {
     border-radius: 10px 0px 0px 10px;
-
+    display: block;
+    max-width: 150px;
+    min-width: 100px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
 }
 
 .cocktail-product-desc {

@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { ICocktails } from '../../model/cocktails';
 
 @Pipe({
   name: 'search',
@@ -6,8 +7,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SearchPipe implements PipeTransform {
 
-  transform(items: any[], value: string): any[] {
-
+  transform(items: ICocktails[], value: string): ICocktails[] {
     if (!items) return [];
     if (!value) return items;
     return items.filter(str => {

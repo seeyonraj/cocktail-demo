@@ -5,12 +5,12 @@ import { cocktailFilterComponent } from './cocktail-filter/cocktail-filter.compo
 import { Router } from '@angular/router';
 import { cocktailDetailsComponent } from '../cocktail-details/cocktail-details.component';
 import { CocktailApiService, CocktailAppService } from '../../shared/service';
-import { SearchPipe } from '../../shared/pipe/search.pipe';
+import { SearchPipe, IngredientsListPipe } from '../../shared/pipe';
 
 @Component({
   selector: 'cocktail-list',
   standalone: true,
-  imports: [CommonModule, cocktailFilterComponent, cocktailDetailsComponent, SearchPipe],
+  imports: [CommonModule, cocktailFilterComponent, cocktailDetailsComponent, SearchPipe, IngredientsListPipe],
   templateUrl: './cocktail-list.component.html',
   styleUrl: './cocktail-list.component.scss'
 })

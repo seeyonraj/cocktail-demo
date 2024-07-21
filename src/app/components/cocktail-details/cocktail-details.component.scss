@@ -1,15 +1,28 @@
-.cocktail-list-container {
-    margin: 20px auto;
+.cocktail-list-item {
+    margin: 10px 10px;
     display: flex;
-    flex-wrap: wrap;
-    padding: 0px 5vh;
-    width: 70vw;
+    width: 600px;
+    height: 3000px;
 }
 
 .cocktail-product-image {
-    width: 300px;
-    height: 250px;
-    margin: auto;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.cocktail-product-image-desc {
+    display: block;
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+.cocktail-product-desc {
+    padding: 10px;
+    flex-grow: 1;
 }
 
 .cocktail-product-name {

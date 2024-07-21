@@ -1,9 +1,10 @@
 <button class="home-btn" (click)="goHome()">Home</button>
 <div class="cocktail-list-item">
-    <div class="cocktail-container">
-        <div class="cocktail-product-image">
-            <img [src]="cocktailDetail.imageUrl">
-        </div>
+
+    <div class="cocktail-product-image">
+        <img [src]="cocktailDetail.imageUrl" class="cocktail-product-image-desc">
+    </div>
+    <div class="cocktail-product-desc">
         <div class="cocktail-product-name">{{cocktailDetail.name}}
             <span class="icon-star" [ngClass]="{'active': cocktailDetail.isFavorite }"
                 (click)="onClickFavourite(cocktailDetail)"></span>
@@ -12,7 +13,13 @@
                 [ngClass]="cocktailDetail.isAlcoholic ? 'style-blue' : 'style-green'">{{cocktailDetail.isAlcoholic
                 ?
                 'Alcoholic' : 'Non alcoholic'}}</span></div>
-        <div><span class="style-bold">Ingredients :</span> {{cocktailDetail.ingredients}}</div>
+        <div style="display:flex"><span class="style-bold">Ingredients :</span>
+            <ul>
+                <ng-container *ngFor="let list of cocktailDetail.ingredients">
+                    <li>{{list}}</li>
+                </ng-container>
+            </ul>
+        </div>
         <div> <span class="style-bold">Instructions :</span> {{cocktailDetail.instructions}}</div>
     </div>
 </div>
